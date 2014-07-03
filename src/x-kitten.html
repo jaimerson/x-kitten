@@ -1,0 +1,17 @@
+<polymer-element name="x-kitten" attributes="size">
+    <template>
+    <img class="kitten" alt="{{size}} pixels of cuteness!" src="http://placekitten.com/{{size}}">
+    </template>
+    <script>
+        Polymer('x-kitten', {
+            /**
+             * Size of the kitten
+             *
+             * @attribute size
+             * @type integer
+             * @default '200'
+             */
+             size: '200'
+        });
+    </script>
+</polymer-element>
